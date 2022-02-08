@@ -1,0 +1,22 @@
+.header{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+
+  .header__link-wrapper{
+    display: flex;
+    a{
+      margin-right: 10px;
+    }
+
+    :last-child{
+      margin-right: 0;
+    }
+  }
+
+  .header__logo-wrapper{
+    width: 250px;
+  }
+}

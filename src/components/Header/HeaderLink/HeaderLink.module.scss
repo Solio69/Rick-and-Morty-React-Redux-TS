@@ -1,0 +1,20 @@
+.header__link{
+  text-decoration: none;
+  color: rgb(230, 235, 240);
+  font-weight: 500;
+  font-size: 22px;
+  padding: 5px 8px;
+
+  // display: flex;
+
+
+  &:hover{
+    letter-spacing: 0.3rem;
+    transition: letter-spacing 0.5s;
+  }
+
+
+
+}
+
+
