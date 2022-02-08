@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Rick-and-Morty-wiki-app/static/css/main.4cf88449.css",
+    "main.js": "/Rick-and-Morty-wiki-app/static/js/main.cfc9b788.js",
+    "static/media/rick-and-morty-logo.png": "/Rick-and-Morty-wiki-app/static/media/rick-and-morty-logo.e2c5e1372f610fe9f8cb.png",
+    "index.html": "/Rick-and-Morty-wiki-app/index.html",
+    "main.4cf88449.css.map": "/Rick-and-Morty-wiki-app/static/css/main.4cf88449.css.map",
+    "main.cfc9b788.js.map": "/Rick-and-Morty-wiki-app/static/js/main.cfc9b788.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4cf88449.css",
+    "static/js/main.cfc9b788.js"
+  ]
+}
