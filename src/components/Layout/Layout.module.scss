@@ -1,6 +1,14 @@
 
 .container{
+  background: -webkit-linear-gradient(45deg, rgb(153, 77, 208), rgb(7, 235, 242));
+  background: -moz-linear-gradient(45deg, rgb(153, 77, 208), rgb(7, 235, 242));
+  background: linear-gradient(45deg, rgb(153, 77, 208), rgb(7, 235, 242));
+  font-family: 'Roboto', sans-serif;
+
+  color: rgb(230, 235, 240);
+
   min-height: 100vh;
+
   margin: 0 auto;
   display: flex;
   flex-direction: column;

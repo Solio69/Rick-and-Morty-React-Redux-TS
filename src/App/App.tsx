@@ -7,7 +7,9 @@ import Filters from '../pages/Filters'
 import About from '../pages/About';
 
 
+
 const App: FC = () => {
+
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
