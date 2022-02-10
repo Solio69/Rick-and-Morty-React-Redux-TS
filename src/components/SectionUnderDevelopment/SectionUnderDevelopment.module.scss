@@ -1,0 +1,25 @@
+.under-development{
+  height: 100%;
+  text-align: center;
+  margin: 50px 15px 0 ;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 8px;
+  background-color: #bd84e6;
+  padding: 20px;
+
+
+  -webkit-box-shadow: 0px 0px 46px 27px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 46px 27px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 46px 27px rgba(34, 60, 80, 0.2);
+  
+  .under-development_logo-wrapper{
+    max-width: 250px;
+  }
+  .under-development_description{
+    display: block;
+    font-size: 30px;
+  }
+}

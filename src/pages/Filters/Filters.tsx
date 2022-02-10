@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
+import SectionUnderDevelopment from '../../components/SectionUnderDevelopment'
 
 const Filters: FC = () => {
+
   return (
-    <div>
-      Filters
-    </div>
+    <SectionUnderDevelopment />
   );
 };
 
