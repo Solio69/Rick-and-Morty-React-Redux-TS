@@ -1,13 +1,14 @@
 import React, { FC } from 'react';
-import HeaderLogo from './HeaderLogo'
+import Logo from '../Logo'
 import HeaderLink from './HeaderLink'
 import styles from './Header.module.scss';
+import headerLogoImg from '../../assets/rick-and-morty-logo.png';
 
 const Header: FC = () => {
   return (
     <header className={styles['header']}>
       <div className={styles['header__logo-wrapper']}>
-        <HeaderLogo />
+        <Logo logoSrc={headerLogoImg} />
       </div>
       <div className={styles['header__link-wrapper']}>
         <HeaderLink adress='/characters' text='Home' />
