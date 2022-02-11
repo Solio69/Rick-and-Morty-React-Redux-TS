@@ -24,6 +24,27 @@ body {
     font-size: 30px;
     color: rgb(240, 112, 112);
   }
+  .ant-pagination{
+    text-align: center;
+
+    .ant-pagination-options-quick-jumper{
+      color: rgb(230, 235, 240);
+    }
+    .ant-pagination-item a{
+      color: rgb(153, 77, 208);
+    }
+    .ant-pagination-prev button, .ant-pagination-next button {
+      color: rgb(153, 77, 208);
+    }
+    .ant-pagination-options-quick-jumper input{
+      color: rgb(153, 77, 208);
+    }
+    .ant-pagination-item-active {
+      font-weight: 500;
+      background: rgb(178, 221, 235);
+      color: rgb(230, 235, 240);
+  }
+  }
 }
 
 

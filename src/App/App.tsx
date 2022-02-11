@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Layout from '../components/Layout';
-import CharacterList from '../pages/CharacterList'
+import CharacterList from '../pages/Home'
 import CharacterDetails from '../pages/CharacterDetails'
 import Filters from '../pages/Filters'
 import About from '../pages/About';

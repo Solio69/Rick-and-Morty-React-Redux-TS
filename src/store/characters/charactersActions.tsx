@@ -1,12 +1,11 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
 const baseStr: string = `https://rickandmortyapi.com/api`;
-// `https://rickandmortyapi.com/api/character/?page=19`
 
 const fetchGetCharacters = createAsyncThunk(
   'characters/fetchGetCharacters',
-  async (_, { rejectWithValue }) => {
-    const url = `${baseStr}/character`;
+  async (page: number, { rejectWithValue }) => {
+    const url = `${baseStr}/character/?page=${page}`;
     try {
       const response = await fetch(url, {
         method: 'GET',

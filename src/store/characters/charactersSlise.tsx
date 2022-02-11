@@ -5,19 +5,24 @@ interface initialStateTypes {
   list: [], // уточнить типы
   status: null | 'loading' | 'resolved' | 'rejected',
   error: null | string,
+  activePage: number,
+  maxPages: null | number
 }
 
 const initialState: initialStateTypes = {
   list: [],
   status: null,
   error: null,
+  activePage: 1,
+  maxPages: null
 }
 
 const charactersSlise = createSlice({
   name: 'characters',
   initialState,
+
   reducers: {
-    //...
+    onPageChange: (state, action) => void (state.activePage = action.payload)
   },
 
   extraReducers: {
@@ -29,9 +34,10 @@ const charactersSlise = createSlice({
     },
 
     [fetchGetCharacters.fulfilled.type]: (state, action) => {
-      console.log('fulfilled', action.payload)
-      // console.log('fulfilled', action.payload.results)
+      // console.log('fulfilled', action.payload)
+      // console.log('fulfilled', action.payload.info.pages)
       const newList: [] = action.payload.results
+      state.maxPages = action.payload.info.pages
       state.status = 'resolved';
       state.list = newList
     },
@@ -45,6 +51,6 @@ const charactersSlise = createSlice({
   },
 });
 
-// export const { } = charactersSlise.actions;
+export const { onPageChange } = charactersSlise.actions;
 
 export default charactersSlise.reducer;
