@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import Logo from '../Logo'
 import HeaderLink from './HeaderLink'
 import styles from './Header.module.scss';
-import headerLogoImg from '../../assets/rick-and-morty-logo.png';
+import headerLogoImg from '../../assets/header-logo.png';
 
 const Header: FC = () => {
   return (

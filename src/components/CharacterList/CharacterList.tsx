@@ -10,7 +10,7 @@ const CharacterList: FC<CharacterListProps> = ({ list }) => {
   return (
     <>
       <ul className={styles['character__list']}>
-        {list.map((item: any) => <СharacterPreview image={item.image} name={item.name} key={item.id} />)}
+        {list.map((item: any) => <СharacterPreview image={item.image} name={item.name} id={item.id} key={item.id} />)}
       </ul>
     </>
   );
