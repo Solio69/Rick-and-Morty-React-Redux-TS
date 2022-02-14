@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Rick-and-Morty-wiki-app/static/css/main.86271c70.css",
-    "main.js": "/Rick-and-Morty-wiki-app/static/js/main.8cafa64b.js",
+    "main.css": "/Rick-and-Morty-wiki-app/static/css/main.e203ca81.css",
+    "main.js": "/Rick-and-Morty-wiki-app/static/js/main.ef986cc4.js",
     "static/media/error-img.png": "/Rick-and-Morty-wiki-app/static/media/error-img.cb7525fe92ef9e9059f3.png",
     "static/media/block-under-development.png": "/Rick-and-Morty-wiki-app/static/media/block-under-development.5ff9d73c33a46c59cf3d.png",
-    "static/media/rick-and-morty-logo.png": "/Rick-and-Morty-wiki-app/static/media/rick-and-morty-logo.e2c5e1372f610fe9f8cb.png",
+    "static/media/header-logo.png": "/Rick-and-Morty-wiki-app/static/media/header-logo.e2c5e1372f610fe9f8cb.png",
     "index.html": "/Rick-and-Morty-wiki-app/index.html",
-    "main.86271c70.css.map": "/Rick-and-Morty-wiki-app/static/css/main.86271c70.css.map",
-    "main.8cafa64b.js.map": "/Rick-and-Morty-wiki-app/static/js/main.8cafa64b.js.map"
+    "main.e203ca81.css.map": "/Rick-and-Morty-wiki-app/static/css/main.e203ca81.css.map",
+    "main.ef986cc4.js.map": "/Rick-and-Morty-wiki-app/static/js/main.ef986cc4.js.map"
   },
   "entrypoints": [
-    "static/css/main.86271c70.css",
-    "static/js/main.8cafa64b.js"
+    "static/css/main.e203ca81.css",
+    "static/js/main.ef986cc4.js"
   ]
 }
