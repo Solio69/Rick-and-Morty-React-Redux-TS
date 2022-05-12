@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Rick-and-Morty-wiki-app/static/css/main.e203ca81.css",
-    "main.js": "/Rick-and-Morty-wiki-app/static/js/main.ef986cc4.js",
-    "static/media/error-img.png": "/Rick-and-Morty-wiki-app/static/media/error-img.cb7525fe92ef9e9059f3.png",
-    "static/media/block-under-development.png": "/Rick-and-Morty-wiki-app/static/media/block-under-development.5ff9d73c33a46c59cf3d.png",
-    "static/media/header-logo.png": "/Rick-and-Morty-wiki-app/static/media/header-logo.e2c5e1372f610fe9f8cb.png",
-    "index.html": "/Rick-and-Morty-wiki-app/index.html",
-    "main.e203ca81.css.map": "/Rick-and-Morty-wiki-app/static/css/main.e203ca81.css.map",
-    "main.ef986cc4.js.map": "/Rick-and-Morty-wiki-app/static/js/main.ef986cc4.js.map"
+    "main.css": "/Rick-and-Morty-React-Redux-TS/static/css/main.937044e4.css",
+    "main.js": "/Rick-and-Morty-React-Redux-TS/static/js/main.193d2905.js",
+    "static/media/error-img.png": "/Rick-and-Morty-React-Redux-TS/static/media/error-img.cb7525fe92ef9e9059f3.png",
+    "static/media/block-under-development.png": "/Rick-and-Morty-React-Redux-TS/static/media/block-under-development.5ff9d73c33a46c59cf3d.png",
+    "static/media/header-logo.png": "/Rick-and-Morty-React-Redux-TS/static/media/header-logo.e2c5e1372f610fe9f8cb.png",
+    "index.html": "/Rick-and-Morty-React-Redux-TS/index.html",
+    "main.937044e4.css.map": "/Rick-and-Morty-React-Redux-TS/static/css/main.937044e4.css.map",
+    "main.193d2905.js.map": "/Rick-and-Morty-React-Redux-TS/static/js/main.193d2905.js.map"
   },
   "entrypoints": [
-    "static/css/main.e203ca81.css",
-    "static/js/main.ef986cc4.js"
+    "static/css/main.937044e4.css",
+    "static/js/main.193d2905.js"
   ]
 }
