@@ -1,1 +1,1 @@
-https://solio69.github.io/Rick-and-Morty-wiki-app/#/characters
+https://solio69.github.io/Rick-and-Morty-React-Redux-TS/#/characters
