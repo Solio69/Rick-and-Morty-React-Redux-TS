@@ -12,7 +12,7 @@ const Header: FC = () => {
       </div>
       <div className={styles['header__link-wrapper']}>
         <HeaderLink adress='/characters' text='Home' />
-        <HeaderLink adress='/filters' text='Filters' />
+        {/* <HeaderLink adress='/filters' text='Filters' /> */}
         <HeaderLink adress='/about' text='About' />
       </div>
 

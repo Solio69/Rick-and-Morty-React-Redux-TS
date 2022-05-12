@@ -4,8 +4,14 @@ const baseStr: string = `https://rickandmortyapi.com/api`;
 
 const fetchGetCharacters = createAsyncThunk(
   'characters/fetchGetCharacters',
-  async (page: number, { rejectWithValue }) => {
-    const url = `${baseStr}/character/?page=${page}`;
+  async (test:{
+    activePage:number
+    serchName:string
+    status:null|string
+    gender:null|string
+  }, { rejectWithValue }) => {
+    // const url = `${baseStr}/character/?page=${page}`;
+    const url = `${baseStr}/character/?page=${test.activePage}&name=${test.serchName?test.serchName:''}&status=${test.status?test.status:''}&gender=${test.gender?test.gender:''}&`;
     try {
       const response = await fetch(url, {
         method: 'GET',

@@ -3,10 +3,10 @@ import { Spin } from 'antd';
 import 'antd/es/spin/style/css';
 
 
-const AntLoader: FC = () => {
+const Loader: FC = () => {
   return (
     <Spin size="large" />
   );
 };
 
-export default AntLoader;
+export default Loader;

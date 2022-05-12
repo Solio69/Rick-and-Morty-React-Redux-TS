@@ -2,7 +2,7 @@
   "name": "rick-and-morty-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Solio69.github.io/Rick-and-Morty-wiki-app",
+  "homepage": "http://Solio69.github.io/Rick-and-Morty-React-Redux-TS",
   "dependencies": {
     "@reduxjs/toolkit": "^1.7.2",
     "@testing-library/jest-dom": "^5.16.2",

@@ -1,9 +1,12 @@
 import { FC, useEffect } from 'react';
+import Filters from '../../components/Filters'
+import SearchInput from '../../components/SearchInput';
 import CharacterList from '../../components/CharacterList'
-import AntLoader from '../../components/AntLoader'
+import Loader from '../../components/Loader'
 import ErrorMessage from '../../components/ErrorMessage'
 import AntPagination from '../../components/AntPagination'
 import { fetchGetCharacters } from '../../store/characters/charactersActions'
+import { oncFiltersChange } from '../../store/characters/charactersSlise';
 import { useDispatch } from 'react-redux';
 import { useStateCharacters } from '../../store/selectors';
 import styles from './Home.module.scss';
@@ -12,27 +15,39 @@ import styles from './Home.module.scss';
 const Home: FC = () => {
   const dispath = useDispatch();
   const charactersData = useStateCharacters()
-  const { error, status, list, activePage } = charactersData
+  const { error, status, list, activePage, searchParams } = charactersData
 
   useEffect(() => {
-    dispath(fetchGetCharacters(activePage));
-  }, [activePage, dispath])
+    const test = {...searchParams,activePage}
+    console.log(test)
+    dispath(fetchGetCharacters(test));
+  }, [activePage, dispath,searchParams])
+
+  const changeFilterOptions = (filterName:any, filterValue:any) =>{
+    dispath(oncFiltersChange({[filterName]:filterValue}));
+  }
+
+
 
   const newList = list && <CharacterList list={list} />
 
-  const loader = status === 'loading' && <AntLoader />
+  const loader = (status === 'loading' && list.length === 0) && <Loader />
 
   const errorMessage = error && <ErrorMessage errorText={error} />
 
-  const pagination = <AntPagination />
+  const pagination = list.length !==0 && <AntPagination />
 
   return (
     <div className={styles['home-wrapper']}>
-      <div className={styles['home-wrapper__inner']}>
+      <section className={styles['home-wrapper__inner']}>
+      <SearchInput/>
+      <Filters changeFilterOptions={changeFilterOptions}/>
+      </section>
+      <section className={styles['home-wrapper__inner']}>
         {errorMessage}
         {loader}
         {newList}
-      </div>
+      </section>
       <div className={styles['home-wrapper__inner']}>
         {pagination}
       </div>

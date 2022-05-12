@@ -2,11 +2,16 @@ import { createSlice } from '@reduxjs/toolkit';
 import { fetchGetCharacters } from '../characters/charactersActions'
 
 interface initialStateTypes {
-  list: [], // уточнить типы
+  list: [],
   status: null | 'loading' | 'resolved' | 'rejected',
   error: null | string,
   activePage: number,
-  maxPages: null | number
+  maxPages: null | number,
+  searchParams: {
+    serchName: string,
+    status: null | string,
+    gender: null | string,
+  }
 }
 
 const initialState: initialStateTypes = {
@@ -14,7 +19,12 @@ const initialState: initialStateTypes = {
   status: null,
   error: null,
   activePage: 1,
-  maxPages: null
+  maxPages: null,
+  searchParams: {
+    serchName: '',
+    status: null,
+    gender: null,
+  }
 }
 
 const charactersSlise = createSlice({
@@ -22,7 +32,10 @@ const charactersSlise = createSlice({
   initialState,
 
   reducers: {
-    onPageChange: (state, action) => void (state.activePage = action.payload)
+    onPageChange: (state, action) => void (state.activePage = action.payload),
+    oncFiltersChange:(state, action)=>{
+      state.searchParams = Object.assign(state.searchParams, action.payload);
+    }
   },
 
   extraReducers: {
@@ -51,6 +64,6 @@ const charactersSlise = createSlice({
   },
 });
 
-export const { onPageChange } = charactersSlise.actions;
+export const { onPageChange, oncFiltersChange } = charactersSlise.actions;
 
 export default charactersSlise.reducer;

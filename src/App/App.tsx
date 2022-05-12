@@ -3,7 +3,6 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import Layout from '../components/Layout';
 import CharacterList from '../pages/Home'
 import CharacterDetails from '../pages/CharacterDetails'
-import Filters from '../pages/Filters'
 import About from '../pages/About';
 
 
@@ -16,7 +15,6 @@ const App: FC = () => {
         <Route path="/" element={<Navigate to="/characters" />} />
         <Route path="/characters" element={<CharacterList />} />
         <Route path="/characters/:id" element={<CharacterDetails />} />
-        <Route path="/filters" element={<Filters />} />
         <Route path="/about" element={<About />} />
       </Route>
     </Routes>
