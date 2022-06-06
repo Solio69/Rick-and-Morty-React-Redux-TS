@@ -1,4 +1,3 @@
-
 # Приложение wiki по мультсериалу Rick and Morty  
 
 Приложение работает с API https://rickandmortyapi.com/documentation  
