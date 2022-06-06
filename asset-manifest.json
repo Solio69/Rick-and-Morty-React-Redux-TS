@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Rick-and-Morty-React-Redux-TS/static/css/main.937044e4.css",
-    "main.js": "/Rick-and-Morty-React-Redux-TS/static/js/main.193d2905.js",
+    "main.css": "/Rick-and-Morty-React-Redux-TS/static/css/main.6037e3ff.css",
+    "main.js": "/Rick-and-Morty-React-Redux-TS/static/js/main.34240406.js",
     "static/media/error-img.png": "/Rick-and-Morty-React-Redux-TS/static/media/error-img.cb7525fe92ef9e9059f3.png",
     "static/media/block-under-development.png": "/Rick-and-Morty-React-Redux-TS/static/media/block-under-development.5ff9d73c33a46c59cf3d.png",
     "static/media/header-logo.png": "/Rick-and-Morty-React-Redux-TS/static/media/header-logo.e2c5e1372f610fe9f8cb.png",
     "index.html": "/Rick-and-Morty-React-Redux-TS/index.html",
-    "main.937044e4.css.map": "/Rick-and-Morty-React-Redux-TS/static/css/main.937044e4.css.map",
-    "main.193d2905.js.map": "/Rick-and-Morty-React-Redux-TS/static/js/main.193d2905.js.map"
+    "main.6037e3ff.css.map": "/Rick-and-Morty-React-Redux-TS/static/css/main.6037e3ff.css.map",
+    "main.34240406.js.map": "/Rick-and-Morty-React-Redux-TS/static/js/main.34240406.js.map"
   },
   "entrypoints": [
-    "static/css/main.937044e4.css",
-    "static/js/main.193d2905.js"
+    "static/css/main.6037e3ff.css",
+    "static/js/main.34240406.js"
   ]
 }
