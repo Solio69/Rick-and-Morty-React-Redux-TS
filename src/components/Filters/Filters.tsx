@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import { Radio, Button } from 'antd';
+import 'antd/es/input/style/css';
 
 interface FiltersProps{
   changeFilterOptions:(filterName:any, filterValue:any)=>void

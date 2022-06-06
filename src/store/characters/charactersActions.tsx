@@ -11,6 +11,8 @@ const fetchGetCharacters = createAsyncThunk(
     gender:null|string
   }, { rejectWithValue }) => {
     // const url = `${baseStr}/character/?page=${page}`;
+
+    // test implementation
     const url = `${baseStr}/character/?page=${test.activePage}&name=${test.serchName?test.serchName:''}&status=${test.status?test.status:''}&gender=${test.gender?test.gender:''}&`;
     try {
       const response = await fetch(url, {

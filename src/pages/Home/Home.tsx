@@ -1,6 +1,6 @@
 import { FC, useEffect } from 'react';
 import Filters from '../../components/Filters'
-import SearchInput from '../../components/SearchInput';
+// import SearchInput from '../../components/SearchInput';
 import CharacterList from '../../components/CharacterList'
 import Loader from '../../components/Loader'
 import ErrorMessage from '../../components/ErrorMessage'
@@ -18,8 +18,9 @@ const Home: FC = () => {
   const { error, status, list, activePage, searchParams } = charactersData
 
   useEffect(() => {
+    //  test implementation
     const test = {...searchParams,activePage}
-    console.log(test)
+    // console.log(test)
     dispath(fetchGetCharacters(test));
   }, [activePage, dispath,searchParams])
 
@@ -40,7 +41,7 @@ const Home: FC = () => {
   return (
     <div className={styles['home-wrapper']}>
       <section className={styles['home-wrapper__inner']}>
-      <SearchInput/>
+      {/* <SearchInput/> */}
       <Filters changeFilterOptions={changeFilterOptions}/>
       </section>
       <section className={styles['home-wrapper__inner']}>

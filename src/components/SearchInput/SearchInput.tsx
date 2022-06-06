@@ -5,8 +5,9 @@ import 'antd/es/input/style/css';
 
 
 const SearchInput:FC = () => {
+  //  test implementation
   const onChange = (event:any) =>{
-    console.log(event.target.value)
+    // console.log(event.target.value)
   }
   return (
     <div className={styles.SearchInput}>

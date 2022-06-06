@@ -39,7 +39,7 @@ const CharacterDetails: FC = () => {
   )
 
 
-  console.log(charaster)
+  // console.log(charaster)
 
   return (
     <div className={styles['charaster']}>
